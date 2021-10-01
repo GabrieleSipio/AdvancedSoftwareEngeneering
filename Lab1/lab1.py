@@ -26,12 +26,16 @@ def divide(m,n):
 
 def subtract (m,n):
     if type(n) is int:
+        result = m 
         for i in range(abs(n)):
-            if (m > 0 and n > 0) or (m < 0 and n < 0):
-                m -= 1
+            if (m > 0 and n > 0) or (m < 0 and n > 0):
+                print(m)
+                result -= 1
+                print(m)
             else:
-                m +=1
-        return m
+                result +=1
+        print("result" + str(m))
+        return result
     raise ValueError("It works only in Z")
 
 def multiply(m,n):
@@ -49,3 +53,6 @@ def gcd(a, b):
         if a == 0 :
             return b
         return gcd(b%a, a)
+
+print(subtract(1,2))
+##git commit -m "Added the multiply, subtraction and gcd method and test"

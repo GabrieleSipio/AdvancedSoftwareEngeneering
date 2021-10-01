@@ -53,6 +53,3 @@ def gcd(a, b):
         if a == 0 :
             return b
         return gcd(b%a, a)
-
-print(subtract(1,2))
-##git commit -m "Added the multiply, subtraction and gcd method and test"

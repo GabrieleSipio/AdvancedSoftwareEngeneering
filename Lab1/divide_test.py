@@ -4,7 +4,7 @@ import unittest
 class TestDivide(unittest.TestCase):
  
     def test_divide_integers_positive(self):
-        result = c.divide(6, 3)
+        result = c.divide(12, 3)
         self.assertEqual(result, 2)
     
     def test_divide_integers_positive2(self):

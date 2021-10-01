@@ -22,4 +22,4 @@ def divide(m,n):
             return i
         else :
             return -i
-    raise ValueError("It only works with positives != 0")
+    raise ZeroDivisionError("It only works with positives != 0")
